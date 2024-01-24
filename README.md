@@ -17,7 +17,7 @@ Adından da anlaşılacağı gibi, XSS verisi web uygulamasında (örneğin bir 
 
 ---
 
-## Kaynak kodunda hangi güvenli olmayan JavaScript yöntemini aramak iyidir?
+## Kaynak kodunda hangi güvenli olmayan JavaScript kodunu aramalıyız ?
 
 ### InnerHTML Kullanımı:
 innerHTML özelliğinin kullanımı, kullanıcı tarafından sağlanan verilerin doğrudan HTML içine yerleştirildiği bir durumu işaret edebilir. Bu, kötü niyetli kullanıcıların HTML ve JavaScript enjekte etmesine olanak tanıyabilir.
