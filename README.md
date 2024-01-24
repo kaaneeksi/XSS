@@ -36,3 +36,19 @@ metin olarak verilen bir JavaScript ifadesini çalıştırır. Kullanıcı taraf
 ### Inline JavaScript Kodları:
 Sayfa içindeki HTML etiketleri arasında veya `onclick`, `onmouseover`, gibi HTML özelliklerinde kullanılan inline JavaScript kodları, kullanıcı girişlerinin doğrudan çalıştırılmasına neden olabilir.
 
+---
+
+### Script Kelimesi Filitrelenmişse
+
+`<script>alert('kaan');</script>` şeklinde bi js kodu çalıştırmak istediniz fakat page-source da bu kod `<>alert('kaan');</>` şeklinde gözüktü.
+
+bu demek ki **script** kelimesi filitrelenmiş. Fakat bu tarz bir kod ile bu filitreyi aşabiliriz.
+
+`<sscriptcript>alert('kaan');</sscriptcript>`
+
+bu kod sayesinde filitre  aşşağıda görülen script ifadesini kaldırıcak ve yerine kalan harfler ile yeni bir script kelimesi oluşucak.
+
+`<s**script**cript>alert('THM');</s**script**cript>`
+
+
+
