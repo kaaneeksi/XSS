@@ -22,6 +22,11 @@ Adından da anlaşılacağı gibi, XSS verisi web uygulamasında (örneğin bir 
 ### InnerHTML Kullanımı:
 innerHTML özelliğinin kullanımı, kullanıcı tarafından sağlanan verilerin doğrudan HTML içine yerleştirildiği bir durumu işaret edebilir. Bu, kötü niyetli kullanıcıların HTML ve JavaScript enjekte etmesine olanak tanıyabilir.
 
+#### Örnek:
+
+`document.getElementsByClassName('name')[0].innerHTML='kaan';`
+bu tarz bir kodu aşmak için `';alert('kaan');//` şeklinde bir kod kullanabiliriz. Baştaki kesme işareti ile `'` isim girilecek alanı kapatabiliriz. Ardından gelen noktalı virgül işareti ise `;` ard arda kod kullanmamıza olanak tanır (linux komutlarında olduğu gibi). Sondaki çift eğik çizgi ise `//` bu girdiden sonra gelen kodları yorum satırına dönüştürmemize olanak tanır. 
+
 ### Document.Write Kullanımı:
 `document.write` fonksiyonu, sayfanın yüklenme sırasında dinamik olarak içeriği değiştirmek için kullanılır. Ancak, bu yöntem kullanıcı girişlerini kontrol etmeden doğrudan içerik ekleyebilir ve güvenlik riskleri oluşturabilir.
 
